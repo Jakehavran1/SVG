@@ -1,0 +1,31 @@
+<svg width="450" height="450" viewBox="0 0 200 200" class="brown">
+  <g>
+    <circle fill="#FFFF00" cx="200" cy="5" r="50"/>
+    <svg height="300" width="340">
+  <line x1="30" y1="40" x2="40" y2="600" style="stroke:rgb(50,0,0);stroke-width:2" />
+   <line x1="60" y1="50" x2="60" y2="900" style="stroke:rgb(50,0,0);stroke-width:2" />
+    <circle fill="#a1a1a" cx="120" cy="80" r="10" />
+    <circle fill="#a1a1a" cx="120" cy="60" r="10" />
+    <circle fill="#a1a1a" cx="120" cy="40" r="10" />
+    <rect fill="#A0522D" width="20" height="50" x="110" y="90" />
+    <polygon fill="#000000" points="100,100 150,150 50,150" />
+    <rect fill="#228B22" width="200" height="10" x="0" y="190" />
+    <rect fill="#8b4513" width="80" height="50" x="60" y="150" />
+    <rect fill="#a1a1a" width="20" height="30" x="100" y="170" />
+   <svg height="200" width="250">
+  <defs>
+    <filter id="f4" x="0" y="0" width="100%" height="200%">
+      <feOffset result="offOut" in="SourceGraphic" dx="20" dy="20" />
+      <feColorMatrix result="matrixOut" in="offOut" type="matrix"
+      values="0.2 0 0 0 0 0 0.2 0 0 0 0 0 0.2 0 0 0 0 0 1 0" />
+      <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="7" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+  <rect width="80" height="75" stroke="Black" stroke-width="3"
+  fill="Yellow" filter="url(#f4)" />
+  <svg height="30" width="150">
+  <text x="4" y="16" fill="Black">Free Food</text>
+  <svg height="30" width="200">
+  <text x="1" y="29" fill="Black"> Served Here</text>
+</svg>
